@@ -1,0 +1,160 @@
+baseURL = "https://sudoersbcn.github.io/"
+languageCode = "ca-es"
+title = "Sudoers de Barcelona"
+theme = "hello-friend-ng"
+
+copyright = '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>'
+
+defaultContentLanguage = "ca"
+defaultContentLanguageInSubdir = true
+
+
+[author]
+  name = "Sudoers Barcelona"
+
+
+[params]
+  dateform = "2 Jan 2006"
+  dateformShort = "2 Jan"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Grup de sysadmins Unix de l'àrea de Barcelona"
+
+  # Metadata mostly used in document's head
+  description = "Unix sysadmins from Barcelona area"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating systeme. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = true
+  # Set a default theme
+  #
+  # This option allows you to set a default theme (light or dark) for the website.
+  # If this is not set, the browser will pick a theme based on OS settings
+  # If this is set to "dark" or "light", the site will be in that theme unless
+  # enableThemeToggle is on, and the user has changed the theme.
+  #
+  defaultTheme = "dark"
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = true
+    rss = false
+    copyright = true
+    author = true
+
+    topText = []
+    bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+            "Theme by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>",
+            "Sandwich logo by <a href=\" http://xkcd.com/149\">xkcd</a>" ]
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/sudoers"
+    #logoHomeLink = "/"
+    # Set true to remove the logo cursor entirely.
+    # logoCursorDisabled = false
+    # Set to a valid CSS color to change the cursor in the logo.
+    # logoCursorColor    = "#67a2c9"
+    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
+    # logoCursorAnimate  = "2s"
+
+  # Uncomment this if you want a portrait on your start page
+  #
+  [params.portrait]
+    path     = "/img/sandwich.png"
+    alt      = "Proper User Policy apparently means Simon Says."
+    maxWidth = "360px"
+
+  # Social icons
+  [[params.social]]
+    name = "email"
+    url  = "https://groups.google.com/g/sudoers-barcelona"
+
+  [[params.social]]
+    name = "meetup"
+    url  = "https://www.meetup.com/sudoersbcn"
+
+  [[params.social]]
+    name = "irc"
+    url  = "ircs://irc.libera.chat:6697/#sudoersbcn"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/sudoersbcn"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/sudoersbcn"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/groups/4081022/"
+
+
+[taxonomies]
+  category = "blog"
+  tag      = "tags"
+  series   = "series"
+
+
+[languages]
+  [languages.ca]
+    title = "Sudoers de Barcelona"
+    homeSubtitle = "Grup de sysadmins Unix de l'àrea de Barcelona"
+    subtitle = "Grup de sysadmins Unix de l'àrea de Barcelona"
+    languageName = "Català"
+    keywords = ""
+    readOtherPosts = "Read other posts"
+    weight = 100
+
+    # And you can even create generic menu
+    [[languages.ca.menu.main]]
+      identifier = "about"
+      name       = "Sobre nosaltres"
+      url        = "/about"
+
+  [languages.en]
+    title = "Sudoers de Barcelona"
+    homeSubtitle = "Unix sysadmins group from Barcelona area"
+    subtitle = "Unix sysadmins group from Barcelona area"
+    languageName = "English"
+    keywords = ""
+    readOtherPosts = "Read other posts"
+    weight = 90
+
+    # And you can even create generic menu
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name       = "About"
+      url        = "/about"
+
+  [languages.es]
+    title = "Sudoers de Barcelona"
+    homeSubtitle = "Grupo de sysadmins Unix del area de Barcelona"
+    subtitle = "Grupo de sysadmins Unix del area de Barcelona"
+    languageName = "Castellano"
+    keywords = ""
+    readOtherPosts = "Read other posts"
+    weight = 80
+
+    # And you can even create generic menu
+    [[languages.es.menu.main]]
+      identifier = "about"
+      name       = "Sobre nosotros"
+      url        = "/about"
