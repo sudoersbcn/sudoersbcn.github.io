@@ -1,0 +1,1 @@
+function detectOSColorTheme(){return window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}(()=>{const a=window.localStorage&&window.localStorage.getItem("theme"),b=document.documentElement.getAttribute("data-theme"),c=detectOSColorTheme(),d=a||b||c;document.documentElement.setAttribute("data-theme",d)})()
