@@ -1,4 +1,4 @@
-baseURL = "https://sudoersbcn.github.io/"
+baseURL = "https://barcelona.sudoers.io/"
 languageCode = "ca-es"
 title = "Sudoers de Barcelona"
 theme = "hello-friend-ng"
